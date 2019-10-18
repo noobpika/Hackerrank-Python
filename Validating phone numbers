@@ -1,0 +1,10 @@
+no_of_inputs = int(input())
+for i in range(0,no_of_inputs):
+    phone_number=input()
+    if len(phone_number) == 10:
+        if (phone_number.startswith("9") and phone_number.isnumeric()) or (phone_number.startswith("8") and phone_number.isnumeric()) or (phone_number.startswith("7")and phone_number.isnumeric()):
+            print("YES")
+        else:
+            print("NO")
+    else:
+        print("NO")
